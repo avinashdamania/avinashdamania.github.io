@@ -1,0 +1,230 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+.button3 {
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	font-size: 30px;
+	font-family:'Raleway', sans-serif;
+	cursor: pointer;
+	outline: none;
+	background-color: white;
+	border: none;
+	border-radius: 15px;
+	
+	width: 20%;
+	height: 20%;
+	padding-bottom: 5%;
+    border-radius: 50%;
+    overflow:hidden;
+    
+    box-shadow: 0 0 3px gray;
+
+    background: #f0f0f0 url(Computer_.png);
+    background-position: 55px 50px;
+    background-repeat: no-repeat;
+    
+}
+
+.ayy {
+	
+margin: 10px;
+	margin-left: 175px;
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	font-size: 30px;
+	font-family:'Raleway', sans-serif;
+	cursor: pointer;
+	outline: none;
+	background-color: white;
+	border: none;
+	border-radius: 15px;
+	
+	width: 20%;
+	height: 20%;
+	padding-bottom: 5%;
+    border-radius: 50%;
+    overflow:hidden;
+    
+    box-shadow: 0 0 3px gray;
+
+    background: #f0f0f0 url(Light_Bulb.png);
+    background-position: 80px 40px;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+
+
+.button4 {
+
+	position: absolute;
+	top:100;
+	left:200;
+
+
+	margin: 10px;
+	margin-left: 40px;
+	margin-top:50px;
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	font-size: 30px;
+	font-family:'Raleway', sans-serif;
+	cursor: pointer;
+	outline: none;
+	background-color: white;
+	border: none;
+	border-radius: 15px;
+	
+	width: 20%;
+	height: 20%;
+	padding-bottom: 5%;
+    border-radius: 50%;
+    overflow:hidden;
+    
+    box-shadow: 0 0 3px gray;
+
+    
+}
+
+
+.button5 {
+
+
+	position: absolute;
+	left:100;
+	top:400;
+
+	margin: 10px;
+	margin-left: 400px;
+	margin-top:75px;
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	font-size: 30px;
+	font-family:'Raleway', sans-serif;
+	cursor: pointer;
+	outline: none;
+	background-color: white;
+	border: none;
+	border-radius: 15px;
+	
+	width: 20%;
+	height: 20%;
+	padding-bottom: 5%;
+    border-radius: 50%;
+    overflow:hidden;
+    
+    box-shadow: 0 0 3px gray;
+
+    
+}
+
+
+
+
+
+.button6 {
+
+
+	position: absolute;
+	
+
+	margin: 10px;
+	margin-left: 350px;
+	
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	font-size: 30px;
+	font-family:'Raleway', sans-serif;
+	cursor: pointer;
+	outline: none;
+	background-color: white;
+	border: none;
+	border-radius: 15px;
+	
+	width: 20%;
+	height: 20%;
+	padding-bottom: 5%;
+    border-radius: 50%;
+    overflow:hidden;
+    
+    box-shadow: 0 0 3px gray;
+
+    
+}
+
+
+
+.button7 {
+
+
+	position: absolute;
+	left:700;
+	top:50;
+
+	margin: 10px;
+	margin-left: 200px;
+	margin-top:50px;
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	font-size: 30px;
+	font-family:'Raleway', sans-serif;
+	cursor: pointer;
+	outline: none;
+	background-color: white;
+	border: none;
+	border-radius: 15px;
+	
+	width: 20%;
+	height: 35%;
+	padding-bottom: 5%;
+    border-radius: 50%;
+    overflow:hidden;
+    
+    box-shadow: 0 0 3px gray;
+
+    
+}
+
+
+
+
+
+a {
+	text-decoration: none;
+}
+
+
+.button3, .ayy, .button4, .button5, .button6, .button7 span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button3:hover, .ayy span:after, .button4 span:after, .button5 span:after, .button6 span:after, .button7 span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.button3:hover, .ayy:hover, .button4:hover, .button5:hover, .button6:hover, .button7:hover {
+	border: 1px solid gray;
+	}
+
+.button3:active, .ayy:active, .button4:active, .button5:active, .button6:active, .button7:active {
+	
+	transform: translateY(4px);
+}
+
+.buttontext, .buttontext {
+	padding-top: 150px;
+	padding-bottom: 0px;
+}
+
+#myText {
+	border: 2px solid black;
+	border-radius: 5px;
+}

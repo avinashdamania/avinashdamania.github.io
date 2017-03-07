@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Beatify - Create</title>
+
+    
+<script type="text/javascript">
+
+
+
+
+document.addEventListener('keydown', function(event){
+
+
+
+
+
+    event = event || window.event;
+    var keycode = event.charCode || event.keyCode;
+    var x = "";
+    
+    switch(keycode) {
+    case 81:
+        x="BUT_NOT_THE_CITIZENS_OF_OUR_COUNTRY.mp3";
+        q.setAttribute("background-color", "red");
+        q.setAttribute("text", "But not the citizens of our country");
+        break;
+    case 87:
+        x="CASH.mp3";
+        w.setAttribute("background-color", "red");
+        break;
+    case 69:
+        x="CRIME_GANG_DRUGS.mp3";
+        e.setAttribute("background-color", "red");
+        break;
+    case 82:
+        x="EVERYONE_IS_LISTENING_TO_YOU_NOW.mp3";
+        r.setAttribute("background-color", "red");
+        break;
+    case 84:
+        x="GOVERMENT_IS_CONTROLLED_BY_THE_PEOPLE.mp3";
+        t.setAttribute("background-color", "red");
+        break;
+    case 89:
+        x="INNER_CITIES.mp3";
+        y.setAttribute("background-color", "red");
+        break;
+    case 85:
+        x="MICHELLE_OBAMA.mp3";
+        u.setAttribute("background-color", "red");
+        break;
+    case 73:
+        x="PRESIDENT_OBAMA.mp3";
+        i.setAttribute("background-color", "red");
+        break;
+    case 79:
+        x="ROBBED_OUR_COUNTRY.mp3";
+        o.setAttribute("background-color", "red");
+        break;
+    case 80:
+        x="STARTING_RIGHT_HERE.mp3";
+        p.setAttribute("background-color", "red");
+        break;
+    case 65:
+        x="STRUGGLING_FAMILIES.mp3";
+        a.setAttribute("background-color", "red");
+        break;
+    case 83:
+        x="THAT_ALL_CHANGES.mp3";
+        s.setAttribute("background-color", "red");
+        break;
+    case 68:
+        x="THEY_HAVE_BEEN_MAGNIFICENT_THANK_YOU.mp3";
+        d.setAttribute("background-color", "red");
+        break;
+    case 70:
+        x="THIS_MOMENT_IS_YOUR_MOMENT_IT_BELONGS_TO_YOU.mp3";
+        f.setAttribute("background-color", "red");
+        break;
+    case 71:
+        x="TREMENDOUS.mp3";
+        g.setAttribute("background-color", "red");
+        break;
+    case 72:
+        x="WE_HAVE_PEOPLE.mp3";
+        h.setAttribute("background-color", "red");
+        break;
+    case 74:
+        x="WE_WILL_GET_THE_JOB_DONE.mp3";
+        j.setAttribute("background-color", "red");
+        break;
+    case 75:
+        x="WHAT_IS_THEPROBLEM.mp3";
+        k.setAttribute("background-color", "red");
+        break;
+    case 76:
+        x="CHINA_CHINA_I_HAVE_TO_HAVE_MY_CHINA.mp3";
+        l.setAttribute("background-color", "red");
+        break;
+    case 90:
+        x="BUY_FROM_CHINA.mp3";
+        z.setAttribute("background-color", "red");
+        break;
+    case 88:
+        x="badblood.mp3";
+        x.setAttribute("background-color", "red");
+        break;
+    case 67:
+        x="badblood.mp3";
+        c.setAttribute("background-color", "red");
+        break;
+    case 86:
+        x="astley.mp3";
+        v.setAttribute("background-color", "red");
+        break;
+    case 66:
+        x="KICK.mp3";
+        b.setAttribute("background-color", "red");
+        break;
+    case 78:
+        x="CLAP.mp3";
+        n.setAttribute("background-color", "red");
+        break;
+    case 77:
+        //x="Felly - Blue Velour InstrumentalFellyTheKid(loop).mp3";
+        m.setAttribute("background-color", "red");
+        break;
+
+    default:
+      
+        break;
+}
+
+
+var audio = new Audio(x);
+audio.play();
+
+
+
+});
+
+
+
+
+
+
+
+
+
+var keydown,
+    keypress = [];
+
+document.addEventListener("keydown", function onKeydown(e1) {
+    keydown = e1;
+}, false);
+
+document.addEventListener("keypress", function onKeypress(e2) {
+    var record = {
+        "char": e2.char || e2.charCode,
+            "key": keydown.key || keydown.keyCode || keyDown.which,
+            "shiftKey": keydown.shiftKey,
+            "metaKey": keydown.metaKey,
+            "altKey": keydown.altKey,
+            "ctrlKey": keydown.ctrlKey
+    },
+    element = document.getElementById(String.fromCharCode(e2.charCode || e2.char));
+
+    if (element) {
+        element.style.backgroundColor = "#AFEEEE";
+        keypress.push(record);
+    }
+}, false);
+
+document.addEventListener("keyup", function onKeyup(e3) {
+    var key = e3.key || e3.keyCode || e3.which;
+
+    keypress.forEach(function (record) {
+        if (record.key === key && record.shiftKey === e3.shiftKey && record.metaKey === e3.metaKey && record.altKey === e3.altKey && record.ctrlKey === e3.ctrlKey) {
+            document.getElementById(String.fromCharCode(record.char)).style.backgroundColor = "#40E0D0";
+        }
+    });
+}, false);
+
+
+
+
+</script>
+
+
+
+
+<style>
+
+button {
+    background-color: #40E0D0;
+    font-size: 50px;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: Verdana;
+    border-color: #AFEEFF;
+
+}
+button:active {
+    background-color: #40E0D0;
+}
+
+
+.keys {
+  margin-top: 75px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+
+</style>
+
+
+
+
+
+
+</head>
+
+
+
+
+<body style = "background-image: url('https://media.giphy.com/media/l93NxD5ys2eDC/giphy.gif'); background-size: cover; margin: auto;">
+
+<div align = "center">
+<button id="q" class = "keys">q</button>
+<button id="w" class = "keys">w</button>
+<button id="e" class = "keys">e</button>
+<button id="r" class = "keys">r</button>
+<button id="t" class = "keys">t</button>
+<button id="y" class = "keys">y</button>
+<button id="u" class = "keys">u</button>
+<button id="i" class = "keys">i</button>
+<button id="o" class = "keys">o</button>
+<button id="p" class = "keys">p</button>
+</div>
+
+<div align = "center">
+<button id="a" class = "keys">a</button>
+<button id="s" class = "keys">s</button>
+<button id="d" class = "keys">d</button>
+<button id="f" class = "keys">f</button>
+<button id="g" class = "keys">g</button>
+<button id="h" class = "keys">h</button>
+<button id="j" class = "keys">j</button>
+<button id="k" class = "keys">k</button>
+<button id="l" class = "keys">l</button>
+</div>
+
+<div align = "center">
+<button id="z" class = "keys">z</button>
+<button id="x" class = "keys">x</button>
+<button id="c" class = "keys">c</button>
+<button id="v" class = "keys">v</button>
+<button id="b" class = "keys">b</button>
+<button id="n" class = "keys">n</button>
+<button id="m" class = "keys">m</button>
+</div>
+
+<div align = "center">
+<button class = "keys"><a href="index.html">Home</a></button>
+<button class = "keys"><a href="unicorn.html">Custom</a></button>
+</div>  
+  
+  
+
+<audio src="Felly - Blue Velour InstrumentalFellyTheKid(loop).mp3" autoplay="" loop = ""></audio>
+
+
+
+
+
+</body>
+
+</html>
+
