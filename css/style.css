@@ -27,8 +27,8 @@ html {
 }
 
 #profilepic {
-	width: 20%;
-	height: 20%;
+	width: 25%;
+	height: 25%;
 	border-radius: 50%;
 }
 
@@ -136,3 +136,42 @@ div.scrollmenu img {
 div.scrollmenu img:hover {
     background-color: white;
 }
+
+
+.fade {
+  margin-bottom: 100px;
+}
+
+
+
+/*animating ngView template injections*/
+/* rotate and fall */
+/* slide in from the bottom */
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+  transition: 0.75s linear all;
+  opacity: 0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.fade.ng-leave {
+  transition: linear all;
+  opacity: 0;
+}
+.fade.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
