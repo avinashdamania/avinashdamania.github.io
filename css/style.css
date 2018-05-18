@@ -1,85 +1,138 @@
-@-webkit-keyframes float {
-  from {
-    -webkit-transform: rotate(0deg) translate3d(3px, 0, 0) rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg) translate3d(3px, 0, 0) rotate(-360deg);
-  }
-}
-@keyframes float {
-  from {
-    transform: rotate(0deg) translate3d(3px, 0, 0) rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg) translate3d(3px, 0, 0) rotate(-360deg);
-  }
-}
-@-webkit-keyframes float-subpixel {
-  from {
-    -webkit-transform: rotate(-0.001deg) translate3d(3px, 0, 0) rotate(-0.001deg);
-  }
-  to {
-    -webkit-transform: rotate(360.001deg) translate3d(3px, 0, 0) rotate(-360.001deg);
-  }
-}
-@keyframes float-subpixel {
-  from {
-    transform: rotate(-0.001deg) translate3d(3px, 0, 0) rotate(-0.001deg);
-  }
-  to {
-    transform: rotate(360.001deg) translate3d(3px, 0, 0) rotate(-360.001deg);
-  }
-}
-body {
-  background-color: #FFFFFF;
-  padding: 50px 0;
-  color: #ccc;
-  font-size: 2em;
+.title {
+	padding-top: 50px;
+	text-align: center;
+
 }
 
-h2 {
-  text-align: center;
-}
+html {
 
-h5 {
-  font-size: 59%;
+	height: 100%;
+	background: linear-gradient(rgba(244, 67, 54, 0.95),
+                            rgba(255, 255, 255, 0.6),
+              				rgba(255, 255, 255, 0.6),
+              				rgba(255, 255, 255, 0.6)),
+                            url("https://cdn.vox-cdn.com/thumbor/RVhobHgNC4xy7NSqXvVs13OdJIk=/0x0:4000x4000/1200x800/filters:focal(1680x1680:2320x2320)/cdn.vox-cdn.com/uploads/chorus_image/image/55649931/IM_Photo5.0.jpg");
+	background-position: 0px -5px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial;
+    font-weight: bold;
 }
 
 
-.footer{
-    position: fixed;
-    text-align: center ;
-    font-size: 16px ;
-    font-family: verdana ;
-    width: 600px ;
-    height: 50px ;
-    background-color: #f6f6f6 ;
+.sourcremetitle {
+	font-size: 30px;
+
 }
-ul.circles {
-  margin: 30px auto 60px;
-  display: block;
-  text-align: center;
+
+#profilepic {
+	width: 30%;
+	height: 30%;
+	border-radius: 50%;
 }
-ul.circles > li {
-  font-size: 2em;
-  list-style: none;
-  background: white;
-  display: inline-block;
-  margin-right: 0.5em;
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-  border: 2px solid black;
+
+
+.navbar {
+	overflow: hidden;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	margin-left: -8px;
+	width: 100%;
+	margin-bottom: 100px;
 }
-ul.circles > li:nth-child(odd) {
-  -webkit-animation: float 6.8s infinite linear;
-  animation: float 6.8s infinite linear;
+
+.navbar2 {
+	overflow: hidden;
+	background-color: black;
+	position: fixed;
+	margin-left: 75%;
+	top: 0;
+	width: 25%;
+	margin-bottom: 100px;
+	height: 5%;
 }
-ul.circles > li:nth-child(even) {
-  -webkit-animation: float 4.8s infinite linear;
-  animation: float 4.8s infinite linear;
+
+.navbar a {
+	float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-ul.circles.subpixel > li {
-  -webkit-animation-name: float-subpixel;
-  animation-name: float-subpixel;
+
+.navbar2 a {
+	float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+
+
+.clothingTitle {
+	padding-top: 50px;
+	text-align: center;
+	font-size: 50px;
+}
+
+
+.clothingItem {
+	margin: 10px;
+}
+
+.clothingImage {
+	max-width: 225px;
+	max-height: 225px;
+	width: auto;
+	height: auto;
+	margin: 10px;
+}
+
+.clothingContainer {
+	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  	grid-gap: 10px;
+  	margin: 5%;
+}
+
+
+p {
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+/*sideways scrolling menu*/
+div.scrollmenu {
+    background-color: #000000;
+    overflow: auto;
+    white-space: nowrap;
+    width: 97%;
+    margin: auto;
+    border-radius: 30px;
+}
+
+div.scrollmenu img {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+}
+
+div.scrollmenu img:hover {
+    background-color: white;
 }

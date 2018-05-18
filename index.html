@@ -1,55 +1,75 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: #AFEEEE;">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Beatify - Home</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style2.css" rel="stylesheet">
+<html lang="en-us" ng-app="myApp">
+<head>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 
-  </head>
+	<script src="js/script.js"></script>
+	<script src="app.js"></script>
+	<title>Avinash Damania</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body style = "background-color: #AFEEEE">
-    <h1>Beatify</h1>
+</head>
 
-    <div class="site-wrapper">
+<body>
+	<div class = "navbar">
+		<a href="#asdfabout">about</a>
+  		<a href="#asdfprojects">projects</a>
+  		<a href="#asdfcontact">contact</a>
+	</div>
 
-      <div class="site-wrapper-inner">
 
-        <div class="container">
+	<div class="title">
+		<div class = "sourcremetitle">
+		<h1>Avinash Damania</h1>
+		</div>
 
-          <div class="masthead clearfix" style = "background-color: #40E0D0;">
-            <div class="container inner">
-              <h3 class="masthead-brand">Beatify</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="signin.html">Sign In</a></li>
-                  <li><a href="support.html">Support</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+		<img src="https://github.com/txcsmad/f18-iOS/raw/master/instructor/42A66084-2169-4D15-80A6-E01A8319B1DC.jpeg" id="profilepic">
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Make music - and memes.</h1>
-            <p class="lead">Beatify creates the rap battles you want to see. Combine any audio clip and any song beat and watch the magic happen.</p>
-            <p class="lead">
-              <a href="create.html" class="btn btn-lg btn-default" style = "background-color: #40E0D0">Create</a>
-            </p>
-          </div>
+		<h2 style="margin-bottom: 150px;">Computer science student, UT Austin. Passionate about tech and learning.<h2>
+	</div>
 
-        </div>
+	<div class="main">
+		<h1 id="asdfabout" class="clothingTitle">about</h1>
+		<p>I am pursuing a B.S. degree in Computer Science with a minor in Business at the University of Texas at Austin.</p>
 
-      </div>
 
-    </div>
+	</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+
+
+
+<div>
+		<h1 id="asdfprojects" class="clothingTitle">projects</h1>
+ 		<div class="scrollmenu">
+ 			<a href="#!sourcreme">
+ 				<img class="clothingImage" src="https://raw.githubusercontent.com/avinashdamania/sourcreme/master/sourcremeimg.png">
+ 			</a>
+
+ 			<a href="#!robotnav">
+ 				<img class="clothingImage" src="https://raw.githubusercontent.com/avinashdamania/robot-navigation/master/public/images/RobotMoving.jpg">
+ 			</a>
+
+ 			<a href="#!app4tht">
+ 				<img class="clothingImage" src="images/app4thtimg.png">
+ 			</a>
+
+ 		
+ 	</div>
+ 	<div ng-view></div>
+ 	</div>
+
+
+		<h1 id="asdfcontact" class="clothingTitle">contact</h1>
+			<h4 style="text-align: center; margin-bottom: 50px;"> avinash - avinash.damania@utexas.edu
+			</h4>
+			<!-- <form id="gform" method="POST" action="https://script.google.com/a/utexas.edu/macros/s/AKfycbw80gBwtJjekEdUAl5wS5Dsb5dSuuQ3g2bMNw5a/exec"> -->
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+</body>
 </html>
