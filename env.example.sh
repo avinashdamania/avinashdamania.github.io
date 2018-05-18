@@ -1,1 +1,0 @@
-export TRANSLOADIT_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
