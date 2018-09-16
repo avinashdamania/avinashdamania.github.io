@@ -1,6 +1,15 @@
 
 function main() {
 
+
+SpotifyCurrentlyPlaying({
+    selector: '#spotify-widget',
+    username: 'avinashdamania',
+    api_key: 'BQAdHyA3psz6zCaUPgmqCBsrX5BJv6qfhlnU0kzQK_YppodkMug7EqH3Qs2friBes0j',
+    width: '100%',
+    height: '370'
+});
+
 (function () {
    'use strict';
    

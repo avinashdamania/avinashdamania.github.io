@@ -9,7 +9,7 @@
 
 <!-- Favicons
     ================================================== -->
-<link rel="shortcut icon" href="img/me.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/me.ico" type="image/x-icon" style="border-radius: 50%;">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -26,7 +26,6 @@
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -225,26 +224,17 @@
 </div>
 
 
-<!-- About Section -->
+
 <div id="about">
   <div class="container">
-    <div class="section-title text-center center">
-      <h2 style="color: #f2f2f2">Avinash Damania</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-center"><img src="img/me.jpeg" class="img-responsive"></div>
-      <div class="col-md-8 col-md-offset-2">
-        <div class="about-text">
-          <p>Hi there! My name is Avinash Damania, and I'm a computer science student minoring in Business at UT Austin. I love food only a tiny bit more than I love coding. Take a look at some of my projects, and feel free to contact me directly below!</p>
-          <a href="#portfolio" class="btn btn-default btn-lg page-scroll">Projects</a> </div>
-      </div>
-    </div>
+<h2 style="color: #f2f2f2; text-align: center;">Recently Played Music</h2>
+
+<div class="listening-to"></div>
+ 
   </div>
 </div>
 
-
-
+ 
 
 
 
@@ -290,6 +280,7 @@
     </div>
   </div>
 </div>
+
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
@@ -298,5 +289,45 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+
+<!--     <script type="text/javascript">
+    $(document).ready(function() {
+        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=avinashdamania&api_key=f38af2a6f60090fc5ee788c7f37b56c7&limit=2&format=json&callback=?", function(data) {
+            var html = '';
+            var counter = 1;
+            $.each(data.recenttracks.track, function(i, item) {
+                if(counter == 1) {
+                    html += 'Currently listening to: <span><a href="' + item.url + '" target="_blank">' + item.name + '</a> - ' + item.artist['#text'] + '</span>';
+                }
+                console.log(item);
+                counter++
+            });
+            $('.listening-to').append(html);
+        });
+    });
+</script> -->
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=avinashdamania&api_key=f38af2a6f60090fc5ee788c7f37b56c7&limit=2&format=json&callback=?", function(data) {
+            var html = '';
+            var counter = 1;
+            $.each(data.recenttracks.track, function(i, item) {
+                if(counter == 1) {
+                    html += '<div class="col-sm-6 col-md-3 col-lg-3 illustration"> <div class="portfolio-item"> <div class="hover-bg"> <a href="' + item.url + '" title="Project Title" data-lightbox-gallery="gallery1"> <div class="hover-text"> <h4>' + item.name + ' by ' + item.artist['#text'] + '</h4> </div> <img src="' + (item.image[3])['#text'] +'" class="img-responsive" alt="Project Title"> </a> </div> </div> </div>';
+                }
+                console.log(item);
+                //counter++
+            });
+            $('.listening-to').append(html);
+        });
+    });
+</script>
+
+
+
+
+
+
 </body>
 </html>
