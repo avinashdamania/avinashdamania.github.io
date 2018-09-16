@@ -69,7 +69,7 @@
       <div class="col-md-12 text-center"><img src="img/me.jpeg" class="img-responsive"></div>
       <div class="col-md-8 col-md-offset-2">
         <div class="about-text">
-          <p>Hi there! My name is Avinash Damania, and I'm a computer science student minoring in Business at UT Austin. I love food only a tiny bit more than I love coding. Take a look at some of my projects, and feel free to contact me directly below!</p>
+          <p>Hi there! My name is Avinash Damania, and I'm a computer science student minoring in business at UT Austin. I love food and sleep only a tiny bit more than I love coding. Take a look at some of my projects, and feel free to contact me directly below!</p>
           <a href="#portfolio" class="btn btn-default btn-lg page-scroll">Projects</a> </div>
       </div>
     </div>
@@ -227,10 +227,86 @@
 
 <div id="about">
   <div class="container">
-<h2 style="color: #f2f2f2; text-align: center;">Recently Played Music</h2>
+    <div class="section-title text-center center">
+      <h2 style="color: #f2f2f2">Experience</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="about-text">
+          <div style="text-align: left;">
+          <ul>
+            <div style="text-align: center; font-size: 125%">
+            <li>Software Development Intern, Bentley Systems (2018) <br><br>
+            </div>
+            • Worked on the Analytical Insights team to develop a data analytics service for design/structural engineering teams. <br>
+            • Wrote unit tests with the Moq framework, restructured an OData API, abstracted communication with a Mongo database, updated frontend of a web app (AngularJS), and implemented a Redis cache for computations.
+            </li> <br><br>
+            <div style="text-align: center; font-size: 125%">
+            <li>Intern, Regal Research and Manufacturing, Richardson, TX (2016) <br><br>
+            </div>
+              • Worked in the Electrical/Mechanical Assembly, Welding/Soldering, and Machine Programming Departments. <br>
+              • Used AutoCAD and Mastercam software to design/produce CNC machined parts for aircraft and medical devices.
+            </li> <br><br>
+            <div style="text-align: center; font-size: 125%">
+            <li>Website Developer, Travel King International, Richardson, TX (2015) <br><br>
+            </div>
+              • Designed and coded a basic business website to help with marketing and international flight booking.
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </div>
+          <a href="#portfolio" class="btn btn-default btn-lg page-scroll">Projects</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<div class="listening-to"></div>
- 
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2 style="color: #f2f2f2">Languages/Skills</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="about-text">
+          <div style="text-align: left;">
+          <ul>
+            <div style="text-align: center; font-size: 125%">
+            <li>Software Development Intern, Bentley Systems (2018) <br><br>
+            </div>
+            • Worked on the Analytical Insights team to develop a data analytics service for design/structural engineering teams. <br>
+            • Wrote unit tests with the Moq framework, restructured an OData API, abstracted communication with a Mongo database, updated frontend of a web app (AngularJS), and implemented a Redis cache for computations.
+            </li> <br><br>
+            <div style="text-align: center; font-size: 125%">
+            <li>Intern, Regal Research and Manufacturing, Richardson, TX (2016) <br><br>
+            </div>
+              • Worked in the Electrical/Mechanical Assembly, Welding/Soldering, and Machine Programming Departments. <br>
+              • Used AutoCAD and Mastercam software to design/produce CNC machined parts for aircraft and medical devices.
+            </li> <br><br>
+            <div style="text-align: center; font-size: 125%">
+            <li>Website Developer, Travel King International, Richardson, TX (2015) <br><br>
+            </div>
+              • Designed and coded a basic business website to help with marketing and international flight booking.
+            </li>
+          </ul>
+          <ul>
+          </ul>
+        </div>
+          <a href="#portfolio" class="btn btn-default btn-lg page-scroll">Projects</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="about">
+  <div class="container">
+    <h2 style="color: #f2f2f2; text-align: center;">Recently Played Music</h2>
+    <div class="listening-to"></div>
   </div>
 </div>
 
@@ -289,23 +365,6 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
-
-<!--     <script type="text/javascript">
-    $(document).ready(function() {
-        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=avinashdamania&api_key=f38af2a6f60090fc5ee788c7f37b56c7&limit=2&format=json&callback=?", function(data) {
-            var html = '';
-            var counter = 1;
-            $.each(data.recenttracks.track, function(i, item) {
-                if(counter == 1) {
-                    html += 'Currently listening to: <span><a href="' + item.url + '" target="_blank">' + item.name + '</a> - ' + item.artist['#text'] + '</span>';
-                }
-                console.log(item);
-                counter++
-            });
-            $('.listening-to').append(html);
-        });
-    });
-</script> -->
 
   <script type="text/javascript">
     $(document).ready(function() {
