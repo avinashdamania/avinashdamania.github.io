@@ -47,11 +47,11 @@ p.intro {
 	line-height: 24px;
 }
 a {
-	color: #555;
+	color: #FAC476;
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #000;
+	color: #98FF98;
 }
 ul, ol {
 	list-style: none;
