@@ -16,7 +16,7 @@ html {
 @media screen and (max-width: 720px) {
 	html {
 		background-repeat: repeat-y;
-    	background-size: cover;
+    	background-size: contain;
     }
 }
 
