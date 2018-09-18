@@ -15,6 +15,7 @@ html {
 
 @media screen and (max-width: 720px) {
 	html {
+		background: url("../img/background2.JPG");
 		background-repeat: repeat-y;
     	background-size: contain;
     }
