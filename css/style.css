@@ -15,7 +15,7 @@ html {
 
 @media screen and (max-width: 720px) {
 	html {
-    	background-size: contain;
+    	background-size: cover;
     }
 }
 
