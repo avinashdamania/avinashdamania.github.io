@@ -15,7 +15,7 @@ html {
 
 @media screen and (max-width: 480px) {
     img {
-         background: hide;
+         max-width: 100%;
     }
 }
 
