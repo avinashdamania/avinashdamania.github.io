@@ -13,7 +13,7 @@ html {
     font-weight: bold;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
 	html {
     	background-size: contain;
     }
