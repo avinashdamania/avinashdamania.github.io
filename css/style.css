@@ -4,7 +4,7 @@ html {
                             rgba(255, 255, 255, 0.6),
               				rgba(255, 255, 255, 0.6),
               				rgba(255, 255, 255, 0.6)),
-                            url("https://cdn.vox-cdn.com/thumbor/RVhobHgNC4xy7NSqXvVs13OdJIk=/0x0:4000x4000/1200x800/filters:focal(1680x1680:2320x2320)/cdn.vox-cdn.com/uploads/chorus_image/image/55649931/IM_Photo5.0.jpg");
+                            url("../img/background.jpg");
 	background-position: 0px -5px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -13,13 +13,10 @@ html {
     font-weight: bold;
 }
 
-@media screen and (max-width: 480px) {
-    img {
-    	width: auto;
-         max-width: 100%;
-         height: auto;
-    }
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	background: url(../img/mobile.jpg) no-repeat center center fixed;
 }
+
 
 body, html {
 	font-family: 'Open Sans', sans-serif;
