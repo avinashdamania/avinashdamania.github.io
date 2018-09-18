@@ -13,6 +13,12 @@ html {
     font-weight: bold;
 }
 
+@media screen and (max-width: 480px) {
+    img {
+         background-size: auto;
+    }
+}
+
 body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
