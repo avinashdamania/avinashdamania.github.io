@@ -387,11 +387,11 @@ color: #2c3e50;
 #contact .social i.fa {
 	font-size: 22px;
 	padding: 4px;
-	color: #444;
+	color: #FFF;
 	transition: all 0.5s;
 }
 #contact .social i.fa:hover {
-	color: #000;
+	color: #E87E04;
 }
 .btn:active, .btn.active {
 	background-image: none;
