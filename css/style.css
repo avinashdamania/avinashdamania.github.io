@@ -1,10 +1,11 @@
 html {
 		height: 100%;
-	background: linear-gradient(rgba(244, 67, 54, 0.95),
+	/*background: linear-gradient(rgba(244, 67, 54, 0.95),
                             rgba(255, 255, 255, 0.6),
               				rgba(255, 255, 255, 0.6),
               				rgba(255, 255, 255, 0.6)),
-                            url("../img/background.jpg");
+                            url("../img/background.jpg");*/
+                            background: url("../img/background.jpg");
 	background-position: 0px -5px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -15,7 +16,7 @@ html {
 
 @media screen and (max-width: 720px) {
 	html {
-		background: url("../img/background3.jpg");
+		background: url("../img/mobilebackground.jpg");
 		background-repeat: repeat-y;
     	background-size: contain;
     }
@@ -179,8 +180,8 @@ hr {
 }
 #about img {
 	border-radius: 50%;
-	width: 160px;
-	height: 160px;
+	width: 200px;
+	height: 200px;
 	display: inline-block;
 }
 #about p {
@@ -319,6 +320,8 @@ ol.type li a:hover {
 /* Contact Section */
 #contact {
 	padding: 120px 0 60px 0;
+	background-color: rgba(0,0,0,0.5);
+	margin-bottom: 0px;
 }
 #contact h3 {
 	padding-top: 20px;
