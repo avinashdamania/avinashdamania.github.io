@@ -204,6 +204,7 @@ ul.cat li {
 ol.type li {
 	display: inline-block;
 	margin-left: 20px;
+	margin-top: 50px;
 }
 ol.type li a {
 	border: 1px solid #777;
