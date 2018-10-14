@@ -269,13 +269,13 @@
 </div>
 
 <!-- uncomment this and script below to show spotify recently played -->
-<!-- 
+
 <div id="about">
   <div class="container">
     <h2 style="color: #f2f2f2; text-align: center;">Recently Played Music</h2>
     <div class="listening-to"></div>
   </div>
-</div> -->
+</div>
 
 
 <div id="contact" class="text-center" style="margin-bottom: 0px;">
@@ -330,9 +330,9 @@
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
 
-<!--   <script type="text/javascript">
+  <script type="text/javascript">
     $(document).ready(function() {
-        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=avinashdamania&api_key=f38af2a6f60090fc5ee788c7f37b56c7&limit=2&format=json&callback=?", function(data) {
+        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=avinashdamania&api_key=f38af2a6f60090fc5ee788c7f37b56c7&limit=5&format=json&callback=?", function(data) {
             var html = '';
             var counter = 1;
             $.each(data.recenttracks.track, function(i, item) {
@@ -345,7 +345,7 @@
             $('.listening-to').append(html);
         });
     });
-</script> -->
+</script>
 <a href="credits.html" style="color: #888888">image credits</a>
 </body>
 
