@@ -332,7 +332,7 @@
 
   <script type="text/javascript">
     $(document).ready(function() {
-        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=avinashdamania&api_key=f38af2a6f60090fc5ee788c7f37b56c7&limit=5&format=json&callback=?", function(data) {
+        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=avinashdamania&api_key=f38af2a6f60090fc5ee788c7f37b56c7&limit=7&format=json&callback=?", function(data) {
             var html = '';
             var counter = 1;
             $.each(data.recenttracks.track, function(i, item) {
