@@ -333,22 +333,6 @@
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-        $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=avinashdamania&api_key=f38af2a6f60090fc5ee788c7f37b56c7&limit=7&format=json&callback=?", function(data) {
-            var html = '';
-            var counter = 1;
-            $.each(data.recenttracks.track, function(i, item) {
-                if(counter == 1) {
-                    html += '<div class="col-sm-6 col-md-3 col-lg-3 illustration"> <div class="portfolio-item"> <div class="hover-bg"> <a href="' + item.url + '" title="Project Title" data-lightbox-gallery="gallery1"> <div class="hover-text"> <h4>' + item.name + ' by ' + item.artist['#text'] + '</h4> </div> <img src="' + (item.image[3])['#text'] +'" class="img-responsive" alt="Project Title"> </a> </div> </div> </div>';
-                }
-                console.log(item);
-                //counter++
-            });
-            $('.listening-to').append(html);
-        });
-    });
-</script>
 <a href="credits.html" style="color: #888888">image credits</a>
 </body>
 
